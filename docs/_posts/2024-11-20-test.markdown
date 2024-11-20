@@ -15,10 +15,10 @@ This is a test page including:
 
 - a sample [Pyvis](https://pyvis.readthedocs.io/en/latest/index.html) network visualization
 
-<script src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/networks/Alicia.html"></script>
+![network](https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/networks/Alicia.html)
 
 - a sample [dice roller](https://gist.github.com/jwygralak67/a7c6844bb175916287c6f780eecca549)
 
-<script src="https://gist.github.com/jwygralak67/a7c6844bb175916287c6f780eecca549.js"></script>
+![roll_dice](https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/roll.html)
 
 
