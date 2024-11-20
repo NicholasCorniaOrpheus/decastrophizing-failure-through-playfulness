@@ -21,7 +21,7 @@ baseurl: /docs/index
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author: nicholascornia
 author: arabellapare
-logo: /assets/images/oi_logo.png"
+site_logo: /assets/images/oi_logo.png"
 copyright: "Orpheus Instituut, 2024."
 search: true
 search_full_content: true
