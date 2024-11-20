@@ -7,6 +7,18 @@ categories: jekyll update
 
 # Testing
 
-This is a test page including the logo of [_Orpheus Instituut_](orpheusinstituut.be)
+This is a test page including:
 
-![logo](https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/images/oi_logo.png)
+-  the logo  [_Orpheus Instituut_](orpheusinstituut.be)
+
+![logo](https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/images/oi_logo_white.png)
+
+- a sample [Pyvis](https://pyvis.readthedocs.io/en/latest/index.html) network visualization
+
+<script src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/networks/Alicia.html"></script>
+
+- a sample [dice roller](https://gist.github.com/jwygralak67/a7c6844bb175916287c6f780eecca549)
+
+<script src="https://gist.github.com/jwygralak67/a7c6844bb175916287c6f780eecca549.js"></script>
+
+
