@@ -1,3 +1,7 @@
+---
+layout: page
+title: "Guidelines"
+---
 # Getting the repository
 
 To get the repository on your local machine open a terminal in  folder of your computer. Your ``home`` folder is usually a good choice. Then run the following commands:
