@@ -23,8 +23,8 @@ author: nicholascornia
 author: arabellapare
 site_logo: /assets/images/oi_logo.png"
 copyright: "Orpheus Instituut, 2024."
-search: true
-search_full_content: true
+search: True
+search_full_content: True
 search_provider: lunr
 algolia:
   application_id: # YOUR_APPLICATION_ID
