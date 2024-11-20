@@ -9,4 +9,4 @@ categories: jekyll update
 
 This is a test page including the logo of [_Orpheus Instituut_](orpheusinstituut.be)
 
-[logo](https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/images/oi_logo.png)
+![logo](https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/images/oi_logo.png)
