@@ -10,7 +10,7 @@ Brief description of the item
 
 ...
 
-citations, definitions and also references.[^1]
+citations, definitions and also references[^1].
 
 # Knowledge graph
 
@@ -24,7 +24,7 @@ Remind the [rules of the game](./game-rules.md).
 
 # References
 
-[^1] Chicago Citation.
+[^1]: Chicago Citation.
 
 
 
