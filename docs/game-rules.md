@@ -12,7 +12,7 @@ Instead of presenting a classical article, fixed by the authors in its static fo
 
 Here an example of Knowledge graph build upon a series of concepts:
 
-<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/networks/example.html" height="400" width="400" title="Example"></iframe>
+<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/networks/example.html" height="450" width="450" title="Example"></iframe>
 
 To determine the next page to be visited, the player will:
 
