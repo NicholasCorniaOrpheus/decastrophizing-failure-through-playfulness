@@ -11,7 +11,7 @@ This is a test page including:
 
 -  the logo  [_Orpheus Instituut_](orpheusinstituut.be)
 
-![logo](https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/images/oi_logo_white.png)
+![logo](https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/images/oi_logo_white.png | width = 300)
 
 - a sample [Pyvis](https://pyvis.readthedocs.io/en/latest/index.html) network visualization
 
