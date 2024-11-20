@@ -1,4 +1,4 @@
-# Guidelines for [[Arabella Pare]]
+# Guidelines
 
 ## Getting the repository
 
