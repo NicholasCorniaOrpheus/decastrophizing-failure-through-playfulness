@@ -1,6 +1,4 @@
-# Guidelines
-
-## Getting the repository
+# Getting the repository
 
 To get the repository on your local machine open a terminal in  folder of your computer. Your ``home`` folder is usually a good choice. Then run the following commands:
 
@@ -27,7 +25,7 @@ git commit --allow-empty -m "Test"
 git push origin gh-pages
 ```
 
-## Routine script
+# Routine script
 
 Make sure you are working with an updated version of the repository. You can pull the latest version by running the command:
 
