@@ -19,7 +19,7 @@ To determine the next page to be visited, the player will:
 - locate the cursor on the current page (root node in the network)
 - roll 3d6s (3 six-sided dice) and take the highest result. If the player has no dice (shame on you!) we provide a simple web-simulator:
 
-<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/roll.html" height="400" width="400" title="Dice Roller"></iframe>
+<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/roll.html" height="300" width="400" title="Dice Roller"></iframe>
 
 ## Knowledge Walk
 
