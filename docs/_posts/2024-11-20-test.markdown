@@ -19,5 +19,5 @@ This is a test page including:
 
 - a sample [dice roller](https://gist.github.com/jwygralak67/a7c6844bb175916287c6f780eecca549)
 
-<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/roll.html" height="200" width="400" title="Dice Roller"></iframe>
+<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/roll.html" height="400" width="400" title="Dice Roller"></iframe>
 
