@@ -17,7 +17,7 @@ lang: en-US
 title: Decastrophizing Failure Through Playflulness
 email: nicholas.cornia@orpheusinstituut.be
 description: Thinking Playfully in Artistic Research
-baseurl: /docs/game-rules
+baseurl: /docs/
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author: nicholascornia
 author: arabellapare
@@ -68,7 +68,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  #- /docs # ignore Basically Basic sample site
 
 # Front Matter Defaults
 defaults:
