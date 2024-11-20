@@ -19,13 +19,10 @@ email: nicholas.cornia@orpheusinstituut.be
 description: Thinking Playfully in Artistic Research
 baseurl: /docs/index
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-author: Nicholas Cornia & Arabella Pare
-  name:
-  twitter:
-  picture:
-twitter_username:
-github_username:
+author: nicholascornia
+author: arabellapare
 logo: /assets/images/oi_logo.png"
+copyright: "Orpheus Instituut, 2024."
 search: true
 search_full_content: true
 search_provider: lunr
