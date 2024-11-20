@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Test post"
+date:   2024-11-20 10:42:00 +0100
+categories: jekyll update
+---
+
+# Testing
+
+This is a test page including the logo of [_Orpheus Instituut_](orpheusinstituut.be)
+
+[logo](../../assets/images/oi_logo.png)
