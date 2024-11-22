@@ -1,0 +1,495 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+                <link href="lib/tom-select/tom-select.css" rel="stylesheet">
+                <script src="lib/tom-select/tom-select.complete.min.js"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 1900px;
+                 height: 1500px;
+                 background-color: #1C1A19;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+             /* position absolute is important and the container has to be relative or absolute as well. */
+          div.popup {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 display:none;
+                 background-color:#f5f4ed;
+                 -moz-border-radius: 3px;
+                 -webkit-border-radius: 3px;
+                 border-radius: 3px;
+                 border: 1px solid #808074;
+                 box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          }
+
+          /* hide the original tooltip */
+          .vis-tooltip {
+            display:none;
+          }
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+                <div id="select-menu" class="card-header">
+                    <div class="row no-gutters">
+                        <div class="col-10 pb-2">
+                            <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="selectNode([value]);"
+                            id="select-node"
+                            placeholder="Select node..."
+                            >
+                                <option selected>Select a Node by ID</option>
+                                
+                                    <option value="Q9465">Q9465</option>
+                                
+                                    <option value="Q11862829">Q11862829</option>
+                                
+                                    <option value="Q7748">Q7748</option>
+                                
+                                    <option value="Q159563">Q159563</option>
+                                
+                                    <option value="Q1061140">Q1061140</option>
+                                
+                                    <option value="A4607">A4607</option>
+                                
+                                    <option value="Q7163">Q7163</option>
+                                
+                                    <option value="Q2743">Q2743</option>
+                                
+                                    <option value="A2065">A2065</option>
+                                
+                                    <option value="Q1344">Q1344</option>
+                                
+                                    <option value="Q1230604">Q1230604</option>
+                                
+                                    <option value="Q2207944">Q2207944</option>
+                                
+                                    <option value="Q3620055">Q3620055</option>
+                                
+                                    <option value="Q96394452">Q96394452</option>
+                                
+                                    <option value="Q11635">Q11635</option>
+                                
+                                    <option value="A26417">A26417</option>
+                                
+                                    <option value="Q7150">Q7150</option>
+                                
+                                    <option value="Q82811">Q82811</option>
+                                
+                                    <option value="A8271">A8271</option>
+                                
+                                    <option value="Q213156">Q213156</option>
+                                
+                                    <option value="A22164">A22164</option>
+                                
+                                    <option value="Q1792379">Q1792379</option>
+                                
+                                    <option value="Q492537">Q492537</option>
+                                
+                                    <option value="A27243">A27243</option>
+                                
+                                    <option value="Q184485">Q184485</option>
+                                
+                                    <option value="Q134307">Q134307</option>
+                                
+                                    <option value="A15789">A15789</option>
+                                
+                                    <option value="Q525180">Q525180</option>
+                                
+                                    <option value="A27184">A27184</option>
+                                
+                                    <option value="Q112110">Q112110</option>
+                                
+                                    <option value="Q24354">Q24354</option>
+                                
+                                    <option value="Q128758">Q128758</option>
+                                
+                                    <option value="Q2561815">Q2561815</option>
+                                
+                                    <option value="Q2106021">Q2106021</option>
+                                
+                                    <option value="Q5752">Q5752</option>
+                                
+                                    <option value="Q253407">Q253407</option>
+                                
+                                    <option value="Q6900844">Q6900844</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-2 pb-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+              <div id="filter-menu" class="card-header">
+                <div class="row no-gutters">
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'item')"
+                            id="select-item"
+                        >
+                        <option value="">Select a network item</option>
+                        <option value="edge">edge</option>
+                        <option value="node">node</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'property')"
+                            id="select-property"
+                        >
+                        <option value="">Select a property...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="select-value"
+                        >
+                        <option value="">Select value(s)...</option>
+                    </select>
+                  </div>
+                  <div class="col-1 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="highlightFilter(filter);">Filter</button>
+                  </div>
+                  <div class="col-2 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="clearFilter(true)">Reset Selection</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+                  new TomSelect("#select-node",{
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      }
+                  });
+              
+
+              
+                  // explicitly using onItemAdd and this function as we need to save multiple values
+                  let updateValueFilter = function() {
+                      return function () {
+                      filter['value'].push(arguments[0])
+                      }
+                  }
+
+                  let valueControl = new TomSelect("#select-value",{
+                      maxItems: null,
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: updateValueFilter()
+                  });
+
+                  let addValues = function() {
+                      return function () {
+                          // clear the current value options and add the selected attribute values
+                          // tom-select handles duplicates
+                          let selectedProperty = arguments[0];
+                          valueControl.clear();
+                          valueControl.clearOptions();
+                          filter['value'] = []
+                          if (filter['item'] === 'node') {
+                              for (let each in allNodes) {
+                                  valueControl.addOption({
+                                      id:allNodes[each][selectedProperty],
+                                      title:allNodes[each][selectedProperty]
+                                  })
+                              }
+                          }
+                          else if (filter['item'] === 'edge') {
+                              for (let each in allEdges) {
+                                  valueControl.addOption({
+                                      id:allEdges[each][selectedProperty],
+                                      title:allEdges[each][selectedProperty]
+                                  })
+                              }
+                          }
+                      }
+                  };
+
+                  let propControl = new TomSelect("#select-property",{
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addValues()
+                  });
+
+                  let addProperties = function() {
+                      return function () {
+                          // loops through the selected network item and adds the attributes to dropdown
+                          // tom-select handles duplicates
+                          clearFilter(false)
+                          if (arguments[0] === 'edge') {
+                              for (let each in allEdges) {
+                                  if (allEdges.hasOwnProperty(each)) {
+                                      for (let eachProp in allEdges[each]) {
+                                          if (allEdges[each].hasOwnProperty(eachProp)) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          else if (arguments[0] === 'node') {
+                              for (let each in allNodes) {
+                                  if (allNodes.hasOwnProperty(each)) {
+                                      for (let eachProp in allNodes[each]) {
+                                          if (allNodes[each].hasOwnProperty(eachProp)
+                                              && (eachProp !== 'hidden' && eachProp !== 'savedLabel'
+                                                  && eachProp !== 'hiddenLabel')) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  };
+
+                  let itemControl = new TomSelect("#select-item",{
+                      create: false,
+                      sortField:{
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addProperties()
+                  });
+
+                  function clearFilter(reset) {
+                      // utility function to clear all the selected filter options
+                      // if reset is set to true, the existing filter will be removed
+                      // else, only the dropdown options are cleared
+                      propControl.clear();
+                      propControl.clearOptions();
+                      valueControl.clear();
+                      valueControl.clearOptions();
+                      filter = {
+                          item : '',
+                          property : '',
+                          value : []
+                      }
+                      if (reset) {
+                          itemControl.clear();
+                          filterHighlight({nodes: []})
+                      }
+                  }
+
+                  function updateFilter(value, key) {
+                      // key could be 'item' or 'property' and value is as selected in dropdown
+                      filter[key] = value
+                  }
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q9465", "label": "ethics", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q9465\u0027\u003eethics\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 201.6769696636247, "y": -513.4148657902136}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q11862829", "label": "academic discipline", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q11862829\u0027\u003eacademic discipline\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 142.07141512650387, "y": -487.04220516489687}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q7748", "label": "law", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q7748\u0027\u003elaw\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 122.44503176011074, "y": -561.5175385704978}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q159563", "label": "solf\u00e8ge", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q159563\u0027\u003esolf\u00e8ge\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 172.19450085511292, "y": -558.5689604110806}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q1061140", "label": "Q1061140", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q1061140\u0027\u003eQ1061140\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -944.0098853360003, "y": 8.704324003024455}, {"color": "#d1ad65", "font": {"color": "#f8f7f4"}, "id": "A4607", "label": "Theater history", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://koha.orpheusinstituut.be/cgi-bin/koha/authorities/detail.pl?authid=4607\u0027\u003eTheater history\u003c/a\u003e \u003c/body\u003e", "value": 5, "x": -895.6420856710351, "y": 38.308256913166964}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q7163", "label": "politics", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q7163\u0027\u003epolitics\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 108.98220297093337, "y": -433.67759162422266}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q2743", "label": "musical", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q2743\u0027\u003emusical\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 4.719099816391403, "y": 136.2503395300681}, {"color": "#d1ad65", "font": {"color": "#f8f7f4"}, "id": "A2065", "label": "Music theater", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://koha.orpheusinstituut.be/cgi-bin/koha/authorities/detail.pl?authid=2065\u0027\u003eMusic theater\u003c/a\u003e \u003c/body\u003e", "value": 5, "x": -23.897303785744914, "y": 84.46732311855374}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q1344", "label": "opera", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q1344\u0027\u003eopera\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -47.536349886610566, "y": 30.245264671778447}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q1230604", "label": "Q1230604", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q1230604\u0027\u003eQ1230604\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -81.96644123995799, "y": 72.63287047170517}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q2207944", "label": "Q2207944", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q2207944\u0027\u003eQ2207944\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 38.13565325731232, "y": 91.22792978334975}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q3620055", "label": "Q3620055", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q3620055\u0027\u003eQ3620055\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 14.434456441153339, "y": 39.470581699023896}, {"color": "#a55faa", "font": {"color": "#f8f7f4"}, "id": "Q96394452", "label": "Q96394452", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q96394452\u0027\u003eQ96394452\u003c/a\u003e \u003c/body\u003e", "value": 200, "x": -70.54685594599792, "y": 141.79280764498344}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q11635", "label": "theatre", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q11635\u0027\u003etheatre\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 71.62730639607143, "y": -481.24541500862733}, {"color": "#d1ad65", "font": {"color": "#f8f7f4"}, "id": "A26417", "label": "Ecology", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://koha.orpheusinstituut.be/cgi-bin/koha/authorities/detail.pl?authid=26417\u0027\u003eEcology\u003c/a\u003e \u003c/body\u003e", "value": 5, "x": 251.16997884198057, "y": -368.0350507318707}, {"color": "#a55faa", "font": {"color": "#f8f7f4"}, "id": "Q7150", "label": "ecology", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q7150\u0027\u003eecology\u003c/a\u003e \u003c/body\u003e", "value": 200, "x": 217.65063788740753, "y": -414.9628151298606}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q82811", "label": "acoustics", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q82811\u0027\u003eacoustics\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 82.1456294826577, "y": -531.8927979655073}, {"color": "#d1ad65", "font": {"color": "#f8f7f4"}, "id": "A8271", "label": "van den Bosch, Pieter Joseph", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://koha.orpheusinstituut.be/cgi-bin/koha/authorities/detail.pl?authid=8271\u0027\u003evan den Bosch, Pieter Joseph\u003c/a\u003e \u003c/body\u003e", "value": 5, "x": -107.59763613076304, "y": 184.5624626342025}, {"color": "#a55faa", "font": {"color": "#f8f7f4"}, "id": "Q213156", "label": "performance art", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q213156\u0027\u003eperformance art\u003c/a\u003e \u003c/body\u003e", "value": 200, "x": -18.384811298830495, "y": 798.3305431515315}, {"color": "#d1ad65", "font": {"color": "#f8f7f4"}, "id": "A22164", "label": "Performance art", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://koha.orpheusinstituut.be/cgi-bin/koha/authorities/detail.pl?authid=22164\u0027\u003ePerformance art\u003c/a\u003e \u003c/body\u003e", "value": 5, "x": 25.978825034315083, "y": 751.6996980027496}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q1792379", "label": "art genre", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q1792379\u0027\u003eart genre\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -68.78988869183529, "y": 861.0804370394907}, {"color": "#a55faa", "font": {"color": "#f8f7f4"}, "id": "Q492537", "label": "Q492537", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q492537\u0027\u003eQ492537\u003c/a\u003e \u003c/body\u003e", "value": 200, "x": -835.9707858547217, "y": 34.698721462047295}, {"color": "#d1ad65", "font": {"color": "#f8f7f4"}, "id": "A27243", "label": "Dramaturgy", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://koha.orpheusinstituut.be/cgi-bin/koha/authorities/detail.pl?authid=27243\u0027\u003eDramaturgy\u003c/a\u003e \u003c/body\u003e", "value": 5, "x": -779.3452278872164, "y": 31.93852982314683}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q184485", "label": "performing arts", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q184485\u0027\u003eperforming arts\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 69.19854400718049, "y": 723.3867510329977}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q134307", "label": "portrait", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q134307\u0027\u003eportrait\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -130.29165939214758, "y": 858.667706724124}, {"color": "#d1ad65", "font": {"color": "#f8f7f4"}, "id": "A15789", "label": "Goebbels, Heiner", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://koha.orpheusinstituut.be/cgi-bin/koha/authorities/detail.pl?authid=15789\u0027\u003eGoebbels, Heiner\u003c/a\u003e \u003c/body\u003e", "value": 5, "x": 553.5107478576535, "y": -888.919121404058}, {"color": "#a55faa", "font": {"color": "#f8f7f4"}, "id": "Q525180", "label": "Q525180", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q525180\u0027\u003eQ525180\u003c/a\u003e \u003c/body\u003e", "value": 200, "x": 580.7161281332185, "y": -933.8711705709345}, {"color": "#d1ad65", "font": {"color": "#f8f7f4"}, "id": "A27184", "label": "Biology", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://koha.orpheusinstituut.be/cgi-bin/koha/authorities/detail.pl?authid=27184\u0027\u003eBiology\u003c/a\u003e \u003c/body\u003e", "value": 5, "x": 279.12758033355186, "y": -415.6948153521084}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q112110", "label": "emblem", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q112110\u0027\u003eemblem\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -40.60859645248039, "y": 921.4826918751003}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q24354", "label": "theatre building", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q24354\u0027\u003etheatre building\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -939.6815851853453, "y": 73.08649777775949}, {"color": "#bfe0db", "font": {"color": "#f8f7f4"}, "id": "Q128758", "label": "satire", "shape": "dot", "size": 10, "title": "\u003cbody\u003e \u003ca href=\u0027https://www.wikidata.org/wiki/Q128758\u0027\u003esatire\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -102.27234992053256, "y": 921.6828376919935}, {"color": "#a55faa", "font": {"color": "#f8f7f4"}, "id": "Q2561815", "label": "Q2561815-docArtes", "shape": "dot", "size": 10, "title": "", "value": 200, "x": 520.8366421232918, "y": 870.1774528640676}, {"color": "#a55faa", "font": {"color": "#f8f7f4"}, "id": "Q2106021", "label": "Q2106021-docArtes", "shape": "dot", "size": 10, "title": "", "value": 200, "x": 729.7757059652963, "y": -575.4482267291716}, {"color": "#a55faa", "font": {"color": "#f8f7f4"}, "id": "Q5752", "label": "Q5752-docArtes", "shape": "dot", "size": 10, "title": "", "value": 200, "x": -866.4401158242772, "y": -791.5238963672844}, {"color": "#a55faa", "font": {"color": "#f8f7f4"}, "id": "Q253407", "label": "Q253407-docArtes", "shape": "dot", "size": 10, "title": "", "value": 200, "x": 766.5845225497284, "y": 560.1033830605963}, {"color": "#a55faa", "font": {"color": "#f8f7f4"}, "id": "Q6900844", "label": "Q6900844-docArtes", "shape": "dot", "size": 10, "title": "", "value": 200, "x": 1000.0, "y": -278.1829401551273}]);
+                  edges = new vis.DataSet([{"from": "Q9465", "to": "Q11862829", "width": 3}, {"from": "Q7748", "to": "Q11862829", "width": 3}, {"from": "Q159563", "to": "Q11862829", "width": 3}, {"from": "Q1061140", "to": "A4607", "width": 4}, {"from": "Q7163", "to": "Q11862829", "width": 3}, {"from": "Q2743", "to": "A2065", "width": 4}, {"from": "A2065", "to": "Q1344", "width": 4}, {"from": "A2065", "to": "Q1230604", "width": 4}, {"from": "A2065", "to": "Q2207944", "width": 4}, {"from": "A2065", "to": "Q3620055", "width": 4}, {"from": "A2065", "to": "Q96394452", "width": 4}, {"from": "Q11635", "to": "Q11862829", "width": 3}, {"from": "A26417", "to": "Q7150", "width": 4}, {"from": "Q11862829", "to": "Q7150", "width": 3}, {"from": "Q11862829", "to": "Q82811", "width": 3}, {"from": "Q96394452", "to": "A8271", "width": 4}, {"from": "Q213156", "to": "A22164", "width": 4}, {"from": "Q213156", "to": "Q1792379", "width": 3}, {"from": "Q492537", "to": "A27243", "width": 4}, {"from": "Q492537", "to": "A4607", "width": 4}, {"from": "Q184485", "to": "A22164", "width": 4}, {"from": "Q134307", "to": "Q1792379", "width": 3}, {"from": "A15789", "to": "Q525180", "width": 4}, {"from": "Q7150", "to": "A27184", "width": 4}, {"from": "Q112110", "to": "Q1792379", "width": 3}, {"from": "A4607", "to": "Q24354", "width": 4}, {"from": "Q128758", "to": "Q1792379", "width": 3}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"configure": {"enabled": true}, "edges": {"color": {"inherit": true}, "smooth": false}, "physics": {"barnesHut": {"gravitationalConstant": -12050}, "minVelocity": 0.75}};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+                    network.on("selectNode", neighbourhoodHighlight);
+                  
+
+                  
+                  // make a custom popup
+                      var popup = document.createElement("div");
+                      popup.className = 'popup';
+                      popupTimeout = null;
+                      popup.addEventListener('mouseover', function () {
+                          console.log(popup)
+                          if (popupTimeout !== null) {
+                              clearTimeout(popupTimeout);
+                              popupTimeout = null;
+                          }
+                      });
+                      popup.addEventListener('mouseout', function () {
+                          if (popupTimeout === null) {
+                              hidePopup();
+                          }
+                      });
+                      container.appendChild(popup);
+
+
+                      // use the popup event to show
+                      network.on("showPopup", function (params) {
+                          showPopup(params);
+                      });
+
+                      // use the hide event to hide it
+                      network.on("hidePopup", function (params) {
+                          hidePopup();
+                      });
+
+                      // hiding the popup through css
+                      function hidePopup() {
+                          popupTimeout = setTimeout(function () { popup.style.display = 'none'; }, 500);
+                      }
+
+                      // showing the popup
+                      function showPopup(nodeId) {
+                          // get the data from the vis.DataSet
+                          var nodeData = nodes.get([nodeId]);
+                          popup.innerHTML = nodeData[0].title;
+
+                          // get the position of the node
+                          var posCanvas = network.getPositions([nodeId])[nodeId];
+
+                          // get the bounding box of the node
+                          var boundingBox = network.getBoundingBox(nodeId);
+
+                          //position tooltip:
+                          posCanvas.x = posCanvas.x + 0.5 * (boundingBox.right - boundingBox.left);
+
+                          // convert coordinates to the DOM space
+                          var posDOM = network.canvasToDOM(posCanvas);
+
+                          // Give it an offset
+                          posDOM.x += 10;
+                          posDOM.y -= 20;
+
+                          // show and place the tooltip.
+                          popup.style.display = 'block';
+                          popup.style.top = posDOM.y + 'px';
+                          popup.style.left = posDOM.x + 'px';
+                      }
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
