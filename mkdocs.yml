@@ -1,0 +1,60 @@
+site_name: Decatastrophizing Failure Through Playfulness
+#site_url: https://custom.domain?
+nav:
+  - Home: index.md
+  - Authors: authors.md
+  - Orpheus Instituut: https://orpheusinstituut.be/en
+  - Rules: game-rules.md
+  - Guidelines: guidelines.md
+  - Projects: https://orpheusinstituut.be/en/projects
+
+plugins:
+  - search
+  - tags
+  - autorefs
+  - roamlinks
+ # - bibtext:
+ #     bib_file: "dftp.bib"
+
+theme:
+  #custom_dir: overrides
+  logo: assets/oi_logo_white.png
+  favicon: assets/favicon.ico
+  name: material
+  language: en
+  icon:
+#    previous: fontawesome/solid/angle-left
+#    next: fontawesome/solid/angle-right
+
+  font:
+    text: Crimson Pro
+  palette:
+    scheme: slate
+    primary: custom
+  features:
+    - navigation.instant
+    - search.share
+    - navigation.footer
+
+copyright: Copyright &copy; 2024 Orpheus Instituut
+
+extra:
+  generator: false
+  social:
+    #- icon: fontawesome/solid/paper-plane
+    #- icon: overrides/email
+    #- link: mailto:nicholas.cornia@orpheusinstituut.be
+    #- icon: overrides/email
+    #- link: mailto:arabella.pare@orpheusinstituut.be
+    #- icon: overrides/instagram
+    #- link: https://www.instagram.com/orpheusinstitute/
+
+
+markdown_extensions:
+  - footnotes
+
+
+extra_css:
+  - stylesheets/extra.css
+
+
