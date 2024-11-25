@@ -44,7 +44,6 @@ def generate_markdown_pages(items,csv_structure,page_structure):
 		markd.add_header(page_structure["headings"][7]["label"],page_structure["headings"][7]["depth"])
 		markd.add_text("If you have forgotten some aspect of the game's rules, please visit agin the [Rules](../game-rules.md) page.")
 		markd.save(filename)
-		break
 
 
 
