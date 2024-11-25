@@ -18,12 +18,19 @@ def generate_markdown_pages(items,csv_structure,page_structure):
 		markd = Markdown()
 		# Metadata
 		markd.add_text("---")
-		markd.add_text(page_structure["metadata"][0])
 		markd.add_text(page_structure["metadata"][1]+item[csv_structure["label"]])
 		markd.add_text("---")
 		# Description
 		markd.add_header(page_structure["headings"][0]["label"],page_structure["headings"][0]["depth"])
 		markd.add_text(item[csv_structure["description"]])
+		markd.add_header(page_structure["headings"][1]["label"],page_structure["headings"][1]["depth"])
+		markd.add_header(page_structure["headings"][2]["label"],page_structure["headings"][2]["depth"])
+		# add iframe path
+		markd.add_text("""<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/networks/"""+str(item[csv_structure["label"]])+""".html" height="400" width="400"></iframe>""")
+		markd.add_header(page_structure["headings"][3]["label"],page_structure["headings"][3]["depth"])
+		# add dice roller
+		markd.add_text("""<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/roll.html" height="300" width="400" title="Dice Roller"></iframe>""")
+		markd.add_header(page_structure["headings"][4]["label"],page_structure["headings"][4]["depth"])
 		markd.save(filename)
 		break
 

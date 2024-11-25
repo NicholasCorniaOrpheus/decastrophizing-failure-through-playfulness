@@ -291,6 +291,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Guidelines
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -300,6 +311,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      MkDocs installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -345,6 +384,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      MkDocs installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -376,6 +432,37 @@ git commit --allow-empty -m &quot;Test&quot;
 # Push the changes back to the repository
 git push origin gh-pages
 </code></pre>
+<h2 id="mkdocs-installation">MkDocs installation</h2>
+<p>The website's content is compiled using the <a href="https://www.mkdocs.org/">MkDocs</a> Python module.</p>
+<ol>
+<li>Install the prerequisites (for Mac users using Homebrew), using pip and python3:</li>
+</ol>
+<pre><code class="language-bash"># Mac users:
+# Install Homebrew
+/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
+# Install Python 3
+brew install python
+python --version
+
+</code></pre>
+<p>Normally the terminal should return Python 3.x version.</p>
+<ol>
+<li>Install pip on Mac:</li>
+</ol>
+<pre><code class="language-bash">#Download the pip package
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+# Install pip for python3
+python3 get-pip.py
+pip3 --version
+</code></pre>
+<ol>
+<li>Install MkDocs and other dependencies</li>
+</ol>
+<pre><code class="language-bash">pip3 install mkdocs
+pip3 install mkdocs-autorefs
+pip3 install mkdocs-roamlinks-plugin
+pip3 install mkdocs-material
+</code></pre>
 <h1 id="routine-script">Routine script</h1>
 <p>Make sure you are working with an updated version of the repository. You can pull the latest version by running the command:</p>
 <pre><code class="language-bash">git pull
@@ -389,6 +476,14 @@ git commit -m date '+%Y-%m-%d'
 # push to gh-pages branch
 git push origin gh-pages
 </code></pre>
+<p>Alternatively, you can build and preview the website using <code>mkdocs</code>, by positioning yourself in the directory where the <code>.yml</code> configuration file is:</p>
+<p>```bash</p>
+<h1 id="show-preview-website">Show preview website</h1>
+<p>mkdocs serve</p>
+<h1 id="build-website-in-html-in-directory-site">Build website in HTML in directory <code>site</code></h1>
+<p>mkdocs build</p>
+<h1 id="commit-changes-to-github-pages">Commit changes to GitHub Pages</h1>
+<p>mkdocs gh-deploy</p>
 <h2 id="markdown-cheatsheet">Markdown cheatsheet</h2>
 <table>
 <thead>
