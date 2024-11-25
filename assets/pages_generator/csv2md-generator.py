@@ -13,24 +13,36 @@ def csv2dictionary_list(csv_filename):
 
 def generate_markdown_pages(items,csv_structure,page_structure):
 	base_path = "./kg/"
+	base_url_wikidata = "https://www.wikidata.org/wiki/"
 	for item in items:
-		filename = base_path+str(item[csv_structure["label"]])+".md"
+		filename = base_path+str(item[csv_structure["id"]])+".md"
 		markd = Markdown()
 		# Metadata
 		markd.add_text("---")
-		markd.add_text(page_structure["metadata"][1]+item[csv_structure["label"]])
+		markd.add_text(page_structure["metadata"][0]+item[csv_structure["label"]])
 		markd.add_text("---")
+		# Title
+		markd.add_header(item[csv_structure["label"]],page_structure["headings"][0]["depth"])
 		# Description
-		markd.add_header(page_structure["headings"][0]["label"],page_structure["headings"][0]["depth"])
-		markd.add_text(item[csv_structure["description"]])
 		markd.add_header(page_structure["headings"][1]["label"],page_structure["headings"][1]["depth"])
+		markd.add_text(item[csv_structure["description"]])
+		# Identifiers
 		markd.add_header(page_structure["headings"][2]["label"],page_structure["headings"][2]["depth"])
-		# add iframe path
-		markd.add_text("""<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/networks/"""+str(item[csv_structure["label"]])+""".html" height="400" width="400"></iframe>""")
+		if item[csv_structure["qid"]] != "":
+			markd.add_list_item("Wikidata: ["+item[csv_structure["qid"]]+"]("+base_url_wikidata+item[csv_structure["qid"]]+")")
+		# Statements
 		markd.add_header(page_structure["headings"][3]["label"],page_structure["headings"][3]["depth"])
-		# add dice roller
-		markd.add_text("""<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/roll.html" height="300" width="400" title="Dice Roller"></iframe>""")
+		# Knowledge Graph
 		markd.add_header(page_structure["headings"][4]["label"],page_structure["headings"][4]["depth"])
+		markd.add_text("""<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/networks/"""+str(item[csv_structure["label"]])+""".html" height="400" width="400"></iframe>""")
+		# Dice roller
+		markd.add_header(page_structure["headings"][5]["label"],page_structure["headings"][5]["depth"])
+		markd.add_text("""<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/roll.html" height="300" width="400" title="Dice Roller"></iframe>""")
+		# References
+		markd.add_header(page_structure["headings"][6]["label"],page_structure["headings"][6]["depth"])
+		# Help
+		markd.add_header(page_structure["headings"][7]["label"],page_structure["headings"][7]["depth"])
+		markd.add_text("If you have forgotten some aspect of the game's rules, please visit agin the [Rules](../game-rules.md) page.")
 		markd.save(filename)
 		break
 
@@ -53,17 +65,20 @@ csv_structure = {
 
 page_structure = {
 	"metadata": [
-	"layout: page",
-	"title:",
-	"categories:", 
-	"tags:" 
+	"title: ",
+	"categories: ", 
+	"tags: " 
 	],
 	"headings": [
-	{"label": "Description","depth": 1},
-	{"label": "Statements","depth": 1},
-	{"label": "Knowledge Graph","depth": 1},
+	{"label": "", "depth":1},
+	{"label": "Description","depth": 2},
+	{"label": "Identifiers","depth": 2},
+	{"label": "Statements","depth": 2},
+	{"label": "Knowledge Graph","depth": 2},
 	{"label": "Dice Roller","depth": 2},
-	{"label": "References","depth": 1}
+	{"label": "References","depth": 2},
+	{"label": "Help","depth": 2}
+
 
 	]
 }
