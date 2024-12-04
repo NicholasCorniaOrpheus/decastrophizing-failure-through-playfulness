@@ -25,16 +25,21 @@ def generate_markdown_pages(items,csv_structure,page_structure):
 		markd.add_header(item[csv_structure["label"]],page_structure["headings"][0]["depth"])
 		# Description
 		markd.add_header(page_structure["headings"][1]["label"],page_structure["headings"][1]["depth"])
-		markd.add_text(item[csv_structure["description"]])
+		markd.add_text(item[csv_structure["wd_description"]])
 		# Identifiers
 		markd.add_header(page_structure["headings"][2]["label"],page_structure["headings"][2]["depth"])
 		if item[csv_structure["qid"]] != "":
 			markd.add_list_item("Wikidata: ["+item[csv_structure["qid"]]+"]("+base_url_wikidata+item[csv_structure["qid"]]+")")
 		# Statements
 		markd.add_header(page_structure["headings"][3]["label"],page_structure["headings"][3]["depth"])
+		# adding related concepts
+		#rc = item["related concepts"].split(",")
+		#rc_id = item["related_concepts_id"].split("|")
+		#for i in range(len(rc)):
+			#markd.add_list_item("["+rc[i].strip()+"](./"+rc_id[i].strip()+".md)")
 		# Knowledge Graph
 		markd.add_header(page_structure["headings"][4]["label"],page_structure["headings"][4]["depth"])
-		markd.add_text("""<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/networks/"""+str(item[csv_structure["label"]])+""".html" height="400" width="400"></iframe>""")
+		markd.add_text("""<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/networks/"""+str(item[csv_structure["id"]])+""".html" height="400" width="400"></iframe>""")
 		# Dice roller
 		markd.add_header(page_structure["headings"][5]["label"],page_structure["headings"][5]["depth"])
 		markd.add_text("""<iframe src="https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/assets/roll.html" height="300" width="400" title="Dice Roller"></iframe>""")
@@ -59,7 +64,9 @@ csv_structure = {
 	"label": "label",
 	"description": "description",
 	"qid": "qid",
-	"wd_description": "wd_description"
+	"wd_description": "wd_description",
+	"related concepts": "related concepts",
+	"related_concepts_id": "related_concepts_id"
 }
 
 page_structure = {

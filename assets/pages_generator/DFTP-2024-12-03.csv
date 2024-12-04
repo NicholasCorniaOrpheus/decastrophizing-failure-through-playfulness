@@ -1,0 +1,114 @@
+id,label,description,qid,wd_lang,wd_description,related concepts,related_concepts_id
+1,magic circle,,Q2211147,en,circle of space marked out by practitioners of many branches of ritual magic,"Johan Huizinga, constraint, interactivity, imaginary world, rule, make-believe",12|2|89|59|29|84
+2,constraint,,Q1173877,en,Wikimedia disambiguation page,rule,29
+3,game,,Q11410,en,structured form of play,"ephimerality, magic circle, rule, game-mechanics, interactivity, imaginary world, play",16|1|29|72|89|59|8
+4,chance,,Q349043,en,Wikimedia disambiguation page,"randomness, dice, agency",6|27|30
+5,competition,,Q476300,en,rivalry where multiple parties strive for a goal which cannot be shared,"interactivity, goal",89|88
+6,randomness,,Q176640,en,apparent lack of pattern or predictability in events,"random process, chance",28|4
+7,reward,,Q1378182,en,Wikimedia disambiguation page,goal,88
+8,play,,Q397813,en,Wikimedia disambiguation page,"game, make-believe, music, collaboration",3|84|13|90
+9,art,,Q735,en,field of work focused on creating expressive work intended to be appreciated for its beauty or emotional power (use Q838948 for the resulting work),"game, interpretation",3|101
+10,artgame,,Q3739535,en,video game designed to emphasize art or whose structure is intended to produce some kind of reaction in its audience,"art, game, open work",9|3|106
+11,game art,,,,,"art, game",9|3
+12,Johan Huizinga,,Q276280,en,Dutch cultural historian (1872–1945),"Homo Ludens, magic circle, play, culture, civilization",22|1|8|21|20
+13,music,,Q638,en,art/activity of creating art using sound,"art, impermanence, evanescence, play",9|14|17|8
+14,impermanence,,Q220797,en,"body and material things are ""transient, not permanent"" - a spiritual concept in Buddhism, Hinduism and Jainism",transience,15
+15,transience,,Q2449174,en,Wikimedia disambiguation page,ephimerality,16
+16,ephimerality,,,,,evanescence,17
+17,evanescence,,Q1777698,en,American rock band,impermanence,14
+18,symmetry,,Q12485,en,state; balance of object,"art, rule, music, musical composition",9|29|13|33
+19,resonance,,Q172858,en,phenomenon in which a vibrating system or external force drives another system to oscillate with greater amplitude at specific frequencies,"music, collaboration",13|90
+20,civilization,,Q8432,en,"organized cultural society that encounters many communities, on a scale of a nation or human, as well as a system of development","play, Johan Huizinga",8|12
+21,culture,,Q11042,en,shared aspects of a society's way of life,"civilization, art, music, play",20|9|13|8
+22,Homo Ludens,,Q1070024,en,essay by Johan Huizinga,Johan Huizinga,12
+23,artistic research,,Q42240,en,systematic study undertaken to increase knowledge,"art, music, culture, musical composition, play",9|13|21|33|8
+24,game design,,Q858057,en,game development process of designing the content and rules of a game,"game, game-mechanics, artgame, emergence, complexity",3|72|10|47|48
+25,algorithm,,Q8366,en,sequence of instructions to perform a task,"procedure, complexity, video game",26|48|50
+26,procedure,,Q14167404,en,Wikimedia disambiguation page,algorithm,25
+27,dice,,Q45089,en,"throwable object (usually but not necessarily a cube) with multiple resting positions, used for generating random integers or outcomes","Musikalisches Würfelspiel, dice game, randomness, chance, play, game",32|37|6|4|8|3
+28,random process,,Q176737,en,mathematical object usually defined as a collection of random variables,randomness,6
+29,rule,,Q230037,en,Wikimedia disambiguation page,game-mechanics,72
+30,agency,,Q232353,en,Wikimedia disambiguation page,freedom,68
+31,generative model,,Q5532625,en,model for randomly generating observable data in probability and statistics,algorithm,25
+32,Musikalisches Würfelspiel,,Q905441,en,musical dice game used to randomly generate music,"music, musical composition, algorithm, procedure, random process",13|33|25|26|28
+33,musical composition,,Q207628,en,"original piece or work of music, either vocal or instrumental",music,13
+34,popular music,,Q373342,en,music genres distributed to large audiences and considered to have wide appeal,Musikalisches Würfelspiel,32
+35,plurality,,Q7205543,en,Wikimedia disambiguation page,"multiplicity, game, emergence, randomness",36|3|47|6
+36,multiplicity,,Q1195232,en,Wikimedia disambiguation page,"plurality, interpretation",35|101
+37,dice game,,Q14111339,en,Wikimedia list article,"dice, game, Musikalisches Würfelspiel, chance, reward",27|3|32|4|7
+38,deck of cards,,Q47883,en,card used as one of a set for playing card games,"Musikalisches Würfelspiel, competition, chance, agency",32|5|4|30
+39,Zofia Kulik,,Q218307,en,Polish artist,"Przemysław Kwiek, KwieKulik, Game on Actress’ Face, art, interactivity, avant garde",40|41|42|9|89|113
+40,Przemysław Kwiek,,,,,"Zofia Kulik, avant garde, art",39|113|9
+41,KwieKulik,,Q218307,en,Polish artist,"Zofia Kulik, Przemysław Kwiek, avant garde",39|40|113
+42,Game on Actress’ Face,,,,,avant garde,113
+43,Marcel Duchamp,,Q5912,en,French painter and sculptor (1887-1968),art,9
+44,game studies,,Q675281,en,"study of games, the act of playing them, and the players and cultures surrounding them","game, game design",3|24
+45,ludology,,Q675281,en,"study of games, the act of playing them, and the players and cultures surrounding them","game, game design",3|24
+46,engagement,,Q157512,en,promise to wed; period of preparation before marriage,"interactivity, collaboration, immersion",89|90|71
+47,emergence,,Q215772,en,phenomenon whereby larger entities arise through interactions among smaller/simpler entities such that the larger entities exhibit properties the smaller/simpler entities don't exhibit,complexity,48
+48,complexity,,Q723897,en,behavior of a system or model with many parts interacting in multiple ways,"emergence, constraint, procedure",47|2|26
+49,gamification,,Q1067402,en,use of game thinking and game mechanics in non-game contexts to engage users in solving problems,"engagement, immersion, goal",46|71|88
+50,video game,,Q7889,en,electronic game with user interface and visual feedback,"game, artificiality, algorithm, game design, Joris Dormans",3|83|25|24|80
+51,ludomusicology,,Q48835339,en,Field of academic research,"music, interactivity, video game",13|89|50
+52,politics,,Q7163,en,activities associated with group decisions,"culture, civilization, competition",21|20|5
+53,creativity,,Q170658,en,cognitive process whereby something new and somehow valuable is formed,"art, musical composition, emergence, constraint",9|33|47|2
+54,innovation,,Q174165,en,"application of better solutions that meet new requirements, inarticulated needs, or existing market needs",civilization,20
+55,consistency,,Q1319773,en,"in logic, property of a theory that does not contain a contradiction","verisimilitude, sub-creation, magic circle",60|70|1
+56,audience,,Q211198,en,group of people who participate in a show or encounter a work of art,"performer, collaboration, popular music, art, interpretation",57|90|34|9|101
+57,performer,,Q184485,en,art form that is performed for an audience,"audience, musical ensemble, art, artistic research",56|107|9|23
+58,parody,,Q170539,en,"genre of imitative work created to mock, comment on or trivialise an original work",imaginary world,59
+59,imaginary world,,Q559618,en,"imaginary, typically self-consistent world with its own rules and characters, different from the real world; often used as a background or basis in story telling","magic circle, consistency, verisimilitude",1|55|60
+60,verisimilitude,,Q222288,en,resemblance to reality,consistency,55
+61,The Grasshopper,,Q400730,en,Wikimedia disambiguation page,"Bernard Suits, parody, game, play, make-believe, role-playing",62|58|3|8|84|85
+62,Bernard Suits,,,,,"The Grasshopper, parody",61|58
+63,experiment,,Q101965,en,"scientific procedure carried out to support, refute, or validate a hypothesis","failure, constraint",65|2
+64,safer space,,Q4080972,en,place for individuals to gather,magic circle,1
+65,failure,,Q1121708,en,state or event of not meeting a desired or intended objective,"play, consequence, goal, reward",8|67|88|7
+66,risk-taking,,Q104493,en,potential for uncontrolled loss due to underlying vulnerability or uncertainties,"failure, consequence",65|67
+67,consequence,,Q1175608,en,Wikimedia disambiguation page,"reward, failure",7|65
+68,freedom,,Q24091434,en,concept in philosophy,"agency, constraint",30|2
+69,temporary world,,,,,imaginary world,59
+70,sub-creation,,Q1822655,en,practice and process of constructing an imaginary world,"imaginary world, verisimilitude, art",59|60|9
+71,immersion,,Q414831,en,Wikimedia disambiguation page,"engagement, game, play",46|3|8
+72,game-mechanics,,Q1751513,en,"construct, rule, or method designed for interaction with a game's state","rule, constraint, emergence",29|2|47
+73,Johanthan Blow,,,,,"artgame, art, avant garde",10|9|113
+74,Braid (2008),,,,,"Johanthan Blow, artgame, video game, failure",73|10|50|65
+75,Jennell Jaquays,,Q4117080,en,American artist and game designer (1956–2024),"Xanderning the Dungeon, game design, tabletop role-playing game, consequence",78|24|87|67
+76,Italo Calvino,,Q154756,en,Italian journalist and writer (1923-1985),"deck of cards, avant garde, literature, narrative, storytelling, imaginary world",38|113|112|99|100|59
+77,feedback loop,,Q183635,en,process in which information about the past or the present influences the same phenomenon in the present or future; it occurs when outputs of a system are routed back as inputs as part of a chain of cause-and-effect that forms a circuit or loop,"procedure, random process, Joris Dormans, Xanderning the Dungeon",26|28|80|78
+78,Xanderning the Dungeon,,,,,"non-linearity, game design",81|24
+79,Cyclic Dungeon Generator,,,,,"emergence, game design, feedback loop",47|24|77
+80,Joris Dormans,,Q107062540,en,Dutch game developer,"emergence, game design",47|24
+81,non-linearity,,Q660848,en,system in which the change of the output is not proportional to the change of the input,"storytelling, narrative",100|99
+82,wonder,,Q73434,en,Wikimedia disambiguation page,"artificiality, video game, interactivity",83|50|89
+83,artificiality,,Q14623823,en,"state of being the product of intentional human manufacture, rather than occurring naturally","imaginary world, sub-creation, wonder",59|70|82
+84,make-believe,,Q6739181,en,loosley structure of play using imagination and sometimes role-play,"play, role-playing",8|85
+85,role-playing,,Q1361181,en,changing of one's behaviour to assume a role,"game, magic circle",3|1
+86,fan culture,,Q773944,en,subculture composed of fans sharing a common interest,"culture, popular music, imaginary world, video game, art",21|34|59|50|9
+87,tabletop role-playing game,,Q1643932,en,form of role-playing game for leisure,"game, role-playing, Xanderning the Dungeon",3|85|78
+88,goal,,Q4503831,en,idea of the future or result that a person or group wants to achieve,"agency, game, competition, reward",30|3|5|7
+89,interactivity,,Q839721,en,"interaction between two or more arbitrary quantities, things or persons",collaboration,90
+90,collaboration,,Q1145523,en,working together,"collaborative game, interactivity, competition",91|89|5
+91,collaborative game,,Q1758804,en,game mode,"game, collaboration",3|90
+92,Lector in fabula,,,,,"Umberto Eco, non-linearity, agency, audience, performer",93|81|30|56|57
+93,Umberto Eco,,Q12807,en,"Italian semiotician, essayist, philosopher, literary critic, and novelist (1932–2016)","literature, open work",112|106
+94,fable,,Q693,en,short fictional story that often anthropomorphises non-humans to illustrate a moral lesson,Lector in fabula,92
+95,Vladimir Nabokov,,Q36591,en,"Russian-American novelist, lepidopterist, professor (1899–1977)","avant garde, literature",113|112
+96,Pale Fire,,Q1229792,en,"novel, in the form of a commentary on a poem, by Vladimir Nabokov","Vladimir Nabokov, non-linearity",95|81
+97,Castle of Crossed Destinies,,Q612882,en,1973 novel by Italo Calvino,"Italo Calvino, tarot cards, non-linearity, storytelling, ars combinatoria",76|98|81|100|111
+98,tarot cards,,Q583269,en,cards used for games or divination,deck of cards,38
+99,narrative,,Q1318295,en,account of a series of related events or experiences in oral or written form,storytelling,100
+100,storytelling,,Q989963,en,"social and cultural activity of sharing stories, often with improvisation, theatrics, or embellishment",narrative,99
+101,interpretation,,Q651448,en,Wikimedia disambiguation page,art,9
+102,Marcel Cobussen,,,,,"artistic research, plurality",23|35
+103,Mauricio Kagel,,Q178293,en,Argentine-German composer (1931-2008),"composer, musical composition, avant garde",105|33|113
+104,Prima Vista,,Q7243609,en,card game,"Mauricio Kagel, chance, agency, interactivity, musical ensemble",103|4|30|89|107
+105,composer,,Q36834,en,person who is an author of music in any form,Mauricio Kagel,103
+106,open work,,,,,"Umberto Eco, plurality, multiplicity, art, music",93|35|36|9|13
+107,musical ensemble,,Q2088357,en,"group of people who perform instrumental and/or vocal music, with the ensemble typically known by a distinct name","music, composer",13|105
+108,surprise,,Q180210,en,Wikimedia disambiguation page,"randomness, chance, random process, interactivity",6|4|28|89
+109,Monadology,,Q1211539,en,literary work by Gottfried Wilhelm Leibniz,Gottfried Leibniz,110
+110,Gottfried Leibniz,,Q9047,en,German mathematician and philosopher (1646–1716),ars combinatoria,111
+111,ars combinatoria,,Q4796322,en,Wikimedia disambiguation page,"procedure, algorithm",26|25
+112,literature,,Q8242,en,"polysemous term referring to a written art form, and the set of all literary works",art,9
+113,avant garde,,Q102932,en,works that are experimental or innovative,art,9
