@@ -32,7 +32,7 @@
         <style type="text/css">
 
              #mynetwork {
-                 width: 400px;
+                 width: 800px;
                  height: 400px;
                  background-color: #1C1A19;
                  border: 1px solid lightgray;
@@ -107,8 +107,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "86", "label": "fan culture", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/86\u0027\u003efan culture\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -176.8914830159184, "y": -684.935518229639}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "34", "label": "popular music", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/34\u0027\u003epopular music\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 124.76102405970452, "y": -193.59507836237682}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "56", "label": "audience", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/56\u0027\u003eaudience\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 696.7050980267592, "y": -121.46940340798407}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "32", "label": "Musikalisches W\u00fcrfelspiel", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/32\u0027\u003eMusikalisches W\u00fcrfelspiel\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -644.5746390705455, "y": 1000.0}]);
-                  edges = new vis.DataSet([{"from": "86", "to": "34", "width": 10}, {"from": "56", "to": "34", "width": 10}, {"from": "34", "to": "32", "width": 1}]);
+                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "34", "label": "popular music", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/34\u0027\u003epopular music\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 176.17771514161944, "y": -193.51052552120498}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "32", "label": "Musikalisches W\u00fcrfelspiel", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/32\u0027\u003eMusikalisches W\u00fcrfelspiel\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -926.8313880692542, "y": 1000.0}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "56", "label": "audience", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/56\u0027\u003eaudience\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 806.9401906959816, "y": 8.645444378250001}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "86", "label": "fan culture", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/86\u0027\u003efan culture\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -56.28651776834669, "y": -815.1349188570457}]);
+                  edges = new vis.DataSet([{"from": "34", "to": "32", "width": 1}, {"from": "34", "to": "56", "width": 10}, {"from": "34", "to": "86", "width": 10}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });

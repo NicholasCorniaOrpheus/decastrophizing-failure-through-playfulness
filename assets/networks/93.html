@@ -32,7 +32,7 @@
         <style type="text/css">
 
              #mynetwork {
-                 width: 400px;
+                 width: 800px;
                  height: 400px;
                  background-color: #1C1A19;
                  border: 1px solid lightgray;
@@ -107,8 +107,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "92", "label": "Lector in fabula", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/92\u0027\u003eLector in fabula\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 11.033738078901287, "y": -1000.0}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "93", "label": "Umberto Eco", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/93\u0027\u003eUmberto Eco\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -4.426609451081191, "y": 192.07098946040713}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "112", "label": "literature", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/112\u0027\u003eliterature\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 433.47555966340315, "y": 413.12411914902555}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "106", "label": "open work", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/106\u0027\u003eopen work\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -440.08268829122335, "y": 394.80489139056755}]);
-                  edges = new vis.DataSet([{"from": "92", "to": "93", "width": 1}, {"from": "93", "to": "112", "width": 10}, {"from": "93", "to": "106", "width": 10}]);
+                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "92", "label": "Lector in fabula", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/92\u0027\u003eLector in fabula\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 41.40865383409395, "y": -1000.0}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "93", "label": "Umberto Eco", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/93\u0027\u003eUmberto Eco\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -8.223568923631762, "y": 195.6251815214186}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "106", "label": "open work", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/106\u0027\u003eopen work\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -456.2979952222445, "y": 384.452970515811}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "112", "label": "literature", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/112\u0027\u003eliterature\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 423.11291031178195, "y": 419.9218479627705}]);
+                  edges = new vis.DataSet([{"from": "92", "to": "93", "width": 1}, {"from": "106", "to": "93", "width": 10}, {"from": "93", "to": "112", "width": 10}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });

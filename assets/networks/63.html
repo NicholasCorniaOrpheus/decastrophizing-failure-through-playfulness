@@ -32,7 +32,7 @@
         <style type="text/css">
 
              #mynetwork {
-                 width: 400px;
+                 width: 800px;
                  height: 400px;
                  background-color: #1C1A19;
                  border: 1px solid lightgray;
@@ -107,8 +107,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "63", "label": "experiment", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/63\u0027\u003eexperiment\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 238.17039563886158, "y": -149.42666800160742}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "65", "label": "failure", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/65\u0027\u003efailure\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 761.8296043611383, "y": -477.99083408770105}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "2", "label": "constraint", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/2\u0027\u003econstraint\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -1000.0, "y": 627.417502089309}]);
-                  edges = new vis.DataSet([{"from": "63", "to": "65", "width": 10}, {"from": "63", "to": "2", "width": 1}]);
+                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "2", "label": "constraint", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/2\u0027\u003econstraint\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 328.74709110698836, "y": -1000.0}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "63", "label": "experiment", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/63\u0027\u003eexperiment\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -77.66306821046688, "y": 236.23971685503727}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "65", "label": "failure", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/65\u0027\u003efailure\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -251.08402289652147, "y": 763.7602831449627}]);
+                  edges = new vis.DataSet([{"from": "2", "to": "63", "width": 1}, {"from": "65", "to": "63", "width": 10}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });

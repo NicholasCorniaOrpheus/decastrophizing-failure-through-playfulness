@@ -32,7 +32,7 @@
         <style type="text/css">
 
              #mynetwork {
-                 width: 400px;
+                 width: 800px;
                  height: 400px;
                  background-color: #1C1A19;
                  border: 1px solid lightgray;
@@ -107,8 +107,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "79", "label": "Cyclic Dungeon Generator", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/79\u0027\u003eCyclic Dungeon Generator\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 141.96645630287645, "y": 64.54967125950449}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "47", "label": "emergence", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/47\u0027\u003eemergence\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -720.8341711883393, "y": 69.95655403785926}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "24", "label": "game design", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/24\u0027\u003egame design\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -421.13228511453696, "y": -589.1887814533927}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "77", "label": "feedback loop", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/77\u0027\u003efeedback loop\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 1000.0, "y": 454.68255615602857}]);
-                  edges = new vis.DataSet([{"from": "79", "to": "47", "width": 1}, {"from": "79", "to": "24", "width": 1}, {"from": "79", "to": "77", "width": 1}, {"from": "47", "to": "24", "width": 1}]);
+                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "77", "label": "feedback loop", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/77\u0027\u003efeedback loop\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 1000.0, "y": -167.69487185058793}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "79", "label": "Cyclic Dungeon Generator", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/79\u0027\u003eCyclic Dungeon Generator\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 139.59273206793603, "y": -23.407049955483387}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "47", "label": "emergence", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/47\u0027\u003eemergence\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -514.8416713713937, "y": 423.2732542517748}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "24", "label": "game design", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/24\u0027\u003egame design\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -624.7510606965421, "y": -232.1713324457034}]);
+                  edges = new vis.DataSet([{"from": "77", "to": "79", "width": 1}, {"from": "79", "to": "47", "width": 1}, {"from": "79", "to": "24", "width": 1}, {"from": "47", "to": "24", "width": 1}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });

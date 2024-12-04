@@ -32,7 +32,7 @@
         <style type="text/css">
 
              #mynetwork {
-                 width: 400px;
+                 width: 800px;
                  height: 400px;
                  background-color: #1C1A19;
                  border: 1px solid lightgray;
@@ -107,8 +107,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "11", "label": "game art", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/11\u0027\u003egame art\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 647.8135971590267, "y": 780.6851836818116}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "9", "label": "art", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/9\u0027\u003eart\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -1000.0, "y": 170.68044021219728}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "3", "label": "game", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/3\u0027\u003egame\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 352.18640284097364, "y": -951.3656238940092}]);
-                  edges = new vis.DataSet([{"from": "11", "to": "9", "width": 1}, {"from": "11", "to": "3", "width": 1}, {"from": "9", "to": "3", "width": 1}]);
+                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "3", "label": "game", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/3\u0027\u003egame\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 34.906132276779495, "y": 1000.0}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "9", "label": "art", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/9\u0027\u003eart\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -883.4784699228285, "y": -469.77040270044984}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "11", "label": "game art", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/11\u0027\u003egame art\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 848.5723376460494, "y": -530.2295972995499}]);
+                  edges = new vis.DataSet([{"from": "3", "to": "9", "width": 1}, {"from": "3", "to": "11", "width": 1}, {"from": "9", "to": "11", "width": 1}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });

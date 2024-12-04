@@ -40,7 +40,7 @@ def ingest_edges(dict_list,net):
 
 def pyvis_visualization(net,path):
 	layout = nx.spring_layout(net)
-	visualization=Network(height="400px", width="400px", bgcolor="#1C1A19", font_color="#f8f7f4", directed=False,select_menu=False,filter_menu=False,notebook=False)
+	visualization=Network(height="400px", width="800px", bgcolor="#1C1A19", font_color="#f8f7f4", directed=False,select_menu=False,filter_menu=False,notebook=False)
 	visualization.from_nx(net)
 	#visualization.toggle_physics(False)
 	#visualization.show_buttons(filter_=['nodes','physics'])

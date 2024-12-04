@@ -32,7 +32,7 @@
         <style type="text/css">
 
              #mynetwork {
-                 width: 400px;
+                 width: 800px;
                  height: 400px;
                  background-color: #1C1A19;
                  border: 1px solid lightgray;
@@ -107,8 +107,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "101", "label": "interpretation", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/101\u0027\u003einterpretation\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -999.9999999999999, "y": 86.37581179818378}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "36", "label": "multiplicity", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/36\u0027\u003emultiplicity\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -433.7313773895827, "y": 37.46392666868848}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "106", "label": "open work", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/106\u0027\u003eopen work\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 673.0966452525312, "y": -568.6475350526781}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "35", "label": "plurality", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/35\u0027\u003eplurality\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 760.6347321370512, "y": 444.8077965858058}]);
-                  edges = new vis.DataSet([{"from": "101", "to": "36", "width": 10}, {"from": "106", "to": "35", "width": 1}, {"from": "106", "to": "36", "width": 1}, {"from": "36", "to": "35", "width": 1}]);
+                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "101", "label": "interpretation", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/101\u0027\u003einterpretation\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 854.6665868979208, "y": 775.8109203198733}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "36", "label": "multiplicity", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/36\u0027\u003emultiplicity\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 363.61682809513735, "y": 330.0678054416985}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "106", "label": "open work", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/106\u0027\u003eopen work\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -218.28341499305802, "y": -983.525612494913}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "35", "label": "plurality", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/35\u0027\u003eplurality\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -1000.0, "y": -122.35311326665824}]);
+                  edges = new vis.DataSet([{"from": "101", "to": "36", "width": 10}, {"from": "106", "to": "35", "width": 1}, {"from": "106", "to": "36", "width": 1}, {"from": "35", "to": "36", "width": 1}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });

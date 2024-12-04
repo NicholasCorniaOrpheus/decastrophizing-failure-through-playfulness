@@ -32,7 +32,7 @@
         <style type="text/css">
 
              #mynetwork {
-                 width: 400px;
+                 width: 800px;
                  height: 400px;
                  background-color: #1C1A19;
                  border: 1px solid lightgray;
@@ -107,8 +107,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "82", "label": "wonder", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/82\u0027\u003ewonder\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 331.7657658911596, "y": 369.5980093975908}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "83", "label": "artificiality", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/83\u0027\u003eartificiality\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -113.9713971305452, "y": -1000.0}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "50", "label": "video game", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/50\u0027\u003evideo game\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -981.9381791045939, "y": -220.87910885293581}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "89", "label": "interactivity", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/89\u0027\u003einteractivity\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 764.1438103439797, "y": 851.281099455345}]);
-                  edges = new vis.DataSet([{"from": "82", "to": "83", "width": 1}, {"from": "82", "to": "50", "width": 1}, {"from": "82", "to": "89", "width": 10}, {"from": "83", "to": "50", "width": 1}]);
+                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "83", "label": "artificiality", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/83\u0027\u003eartificiality\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 453.24916574328523, "y": -759.950494851184}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "50", "label": "video game", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/50\u0027\u003evideo game\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -567.0433921443863, "y": -679.2797269654444}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "82", "label": "wonder", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/82\u0027\u003ewonder\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 34.7282166079926, "y": 439.23022181662793}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "89", "label": "interactivity", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/89\u0027\u003einteractivity\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 79.06600979310842, "y": 1000.0}]);
+                  edges = new vis.DataSet([{"from": "83", "to": "50", "width": 1}, {"from": "83", "to": "82", "width": 1}, {"from": "89", "to": "82", "width": 10}, {"from": "50", "to": "82", "width": 1}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });

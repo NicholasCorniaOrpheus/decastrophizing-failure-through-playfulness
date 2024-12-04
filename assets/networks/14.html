@@ -32,7 +32,7 @@
         <style type="text/css">
 
              #mynetwork {
-                 width: 400px;
+                 width: 800px;
                  height: 400px;
                  background-color: #1C1A19;
                  border: 1px solid lightgray;
@@ -107,8 +107,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "14", "label": "impermanence", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/14\u0027\u003eimpermanence\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 436.0225158874133, "y": -92.45199044317066}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "13", "label": "music", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/13\u0027\u003emusic\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -825.7184928250393, "y": -355.7259070267836}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "15", "label": "transience", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/15\u0027\u003etransience\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 1000.0, "y": -212.03487585499545}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "17", "label": "evanescence", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/17\u0027\u003eevanescence\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -610.3040230623741, "y": 660.2127733249494}]);
-                  edges = new vis.DataSet([{"from": "14", "to": "13", "width": 1}, {"from": "14", "to": "15", "width": 10}, {"from": "14", "to": "17", "width": 1}, {"from": "17", "to": "13", "width": 1}]);
+                  nodes = new vis.DataSet([{"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "17", "label": "evanescence", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/17\u0027\u003eevanescence\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": 641.4603826503039, "y": 622.1396146167899}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "13", "label": "music", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/13\u0027\u003emusic\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -373.00341031568763, "y": 812.0329046886844}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "14", "label": "impermanence", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/14\u0027\u003eimpermanence\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -81.2709137049898, "y": -434.17251930547445}, {"color": "#f8f7f4", "font": {"color": "#f8f7f4"}, "id": "15", "label": "transience", "shape": "dot", "size": 10, "title": "\u003cbody\u003e\u003ca href=\u0027https://nicholascorniaorpheus.github.io/decastrophizing-failure-through-playfulness/kg/15\u0027\u003etransience\u003c/a\u003e \u003c/body\u003e", "value": 10, "x": -187.18605862962576, "y": -1000.0}]);
+                  edges = new vis.DataSet([{"from": "17", "to": "13", "width": 1}, {"from": "17", "to": "14", "width": 1}, {"from": "15", "to": "14", "width": 10}, {"from": "14", "to": "13", "width": 1}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
